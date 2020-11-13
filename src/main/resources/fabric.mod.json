@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "simplysulfur",
+  "version": "${version}",
+
+  "name": "Simply Sulfur",
+  "description": "A mod that adds in Sulfur which can be used to craft gunpowder!",
+  "authors": [
+    "allkillernofiller (Killer_Playz)"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "All Rights Reserved",
+  "icon": "assets/simplysulfur/simplysulfur_logo.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.allkillernofiller.simplysulfur.SimplySulfur"
+    ]
+  },
+  "mixins": [
+    "simplysulfur.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
