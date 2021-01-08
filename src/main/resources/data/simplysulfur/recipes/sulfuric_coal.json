@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CS"
+  ],
+  "key": {
+    "S": {
+      "item": "simplysulfur:sulfur"
+    },
+    "C": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "item": "simplysulfur:sulfuric_coal"
+  }
+}

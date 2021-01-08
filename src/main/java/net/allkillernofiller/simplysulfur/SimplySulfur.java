@@ -5,6 +5,7 @@ import net.allkillernofiller.simplysulfur.init.ItemInit;
 import net.allkillernofiller.simplysulfur.world.OreGenerator;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -17,6 +18,9 @@ public class SimplySulfur implements ModInitializer {
 		BlockInit.registerBlocks();
 		ItemInit.registerItems();
 		OreGenerator.genOres();
+
+		// Registers Fuels
+		FuelRegistry.INSTANCE.add(ItemInit.SULFURIC_COAL, 3200);
 	}
 
 	public static final ItemGroup TAB = FabricItemGroupBuilder.build(
